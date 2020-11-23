@@ -15,6 +15,8 @@ public class Main {
 	b1.addTempSensor(t1);
 	b1.addTempSensor(t2);
 
+		System.out.println("the buildng b1 has sensors:" );
+
 	System.out.println(b1.getSensors());
 
 	/* test remove methods
