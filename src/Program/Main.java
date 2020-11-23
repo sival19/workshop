@@ -14,7 +14,8 @@ public class Main {
 
 	b1.addTempSensor(t1);
 	b1.addTempSensor(t2);
-	System.out.println(b1.addTempSensor(t3));
+
+	System.out.println(b2);
 
 	/* test remove methods
 	* test other add methods
