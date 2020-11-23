@@ -1,23 +1,32 @@
-package sample;
+package com.company;
 
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
-
-public class Main extends Application {
-
-    @Override
-    public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
-        primaryStage.show();
-    }
-
+public class Main {
 
     public static void main(String[] args) {
-        launch(args);
+	BuildingAdministrationSystem admin = new BuildingAdministrationSystem();
+
+	Building b1 = new Building("GressumsInc");
+	Building b2 = new Building("BananaInc");
+
+	TemperatureSensor t1 = new TemperatureSensor("Gressums Kontor", 25);
+	TemperatureSensor t2 = new TemperatureSensor("Amnums Kontor", 27);
+	TemperatureSensor t3 = new TemperatureSensor("Lasses Kontor", 12);
+
+	b1.addTempSensor(t1);
+	b1.addTempSensor(t2);
+	System.out.println(b1.addTempSensor(t3));
+
+	/* test remove methods
+	* test other add methods
+	* test getters
+	* test setters
+	 */
+
+
+
+
+
+
+
     }
 }
