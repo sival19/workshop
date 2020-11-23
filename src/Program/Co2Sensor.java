@@ -1,12 +1,15 @@
-package com.company;
+package Program;
+
+import java.util.UUID;
+
 /*
-* This class is responsible for keeping
-* track of the value of a TempSensor
+ * This class is responsible for keeping
+ * track of the value of a Co2Sensor
  */
 
-public class TemperatureSensor extends Sensor{
+public class Co2Sensor extends Sensor{
 
-    public TemperatureSensor(String name, double value) {
+    public Co2Sensor(String name, double value) {
         super(name, value);
     }
 

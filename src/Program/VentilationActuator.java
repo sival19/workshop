@@ -1,4 +1,4 @@
-package com.company;
+package Program;
 
 /*
  * This class is responsible for keeping
